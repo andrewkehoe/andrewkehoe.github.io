@@ -1,0 +1,47 @@
+/* Credit to w3schools for most of the css */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(63, 94, 251,50%), rgba(139, 37, 160,50%));
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: "JetBrainsMono", monospace;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ececec;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ddabff;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+    font-family: "JetBrainsMono", monospace;
+    color: #ececec;
+}
+
+.main a{
+    color: #53ffd7;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbV2o-flEEny0FZhsfKu5WU4xD7OwGtT0rU.woff2) format('woff2');
+}
